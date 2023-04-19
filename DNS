@@ -10,8 +10,7 @@ BufferedReader in = new BufferedReader(new
 InputStreamReader(System.in));
 do
 {
-System.out.println("\n Menu: \n 1. DNS 2. Reverse DNS 3.
-Exit \n");
+System.out.println("\n Menu: \n 1. DNS 2. Reverse DNS 3.Exit \n");
 System.out.println("\n Enter your choice");
 n = Integer.parseInt(System.console().readLine());
 if(n==1)
@@ -22,10 +21,8 @@ System.out.println("\n Enter Host Name ");
 String hname=in.readLine();
 InetAddress address;
 address = InetAddress.getByName(hname);
-System.out.println("Host Name:" +
-address.getHostName());
-System.out.println("IP:" +
-address.getHostAddress());
+System.out.println("Host Name:" +address.getHostName());
+System.out.println("IP:" +address.getHostAddress());
 }
 catch (IOException ioe)
 {
