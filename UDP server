@@ -14,8 +14,7 @@ DatagramPacket(b,b.length);
 dsoc.receive(dp);
 String str = new String(dp.getData());
 fout.write(str.getBytes());
-System.out.println("File transfer
-completed....!");
+System.out.println("File transfer completed ....!");
 fout.close();
 }
 }
